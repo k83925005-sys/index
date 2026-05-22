@@ -1,0 +1,279 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font-size: 25px;
+	font-family: arial,helveltica;sans-serif;
+	line-height: 1.4em
+}
+
+.contenedor{
+	width: 980px;
+	margin: 0 auto;
+	/*background: red;
+	border: 1px solid blue;*/
+}
+
+.encabezado{
+	background: #2c2c2c;
+	overflow: hidden;
+}
+
+.logo{
+	display: block;
+	float: left;
+	position: left;
+	top: 15px;
+}
+
+.encabezado nav{
+	float: right;
+}
+
+.encabezado nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.encabezado nav ul li{
+	display: inline-block;
+	/*background: red;*/
+	margin-right: -4px;
+}
+
+.encabezado nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 28px;
+	border-left: 1px solid #696969;
+	text-decoration: none;
+}
+
+/*cambio de color*/
+.encabezado nav ul li a:hover{
+	background: #575757;
+}
+.presentacion{
+	/*background: yellow;*/
+	background: radial-gradient(280px at 25% 10%, #a3d4ff, #0460ad);
+	overflow: hidden;
+	border-bottom: 3px solid #044e8b;
+}
+.introduccion-presentacion{
+	float: left;
+}
+.introduccion-presentacion h1{
+	color: #fff;
+	font-size: 2.625em; /*Regla de 3   16px 1em 42px 2.625em*/
+	text-shadow: 1px 1px 0px #090909;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+	line-height: 0.7em;   /*Interlineado*/
+}
+.introduccion-presentacion span{
+	color: #fff;
+	font-size: 0.38em;   /* 42px=2.62em   16px=0.38em*/
+}
+a.aprender-mas{
+	font-size: 2.1875em;
+	border: 1px solid #0d5c25;
+	padding: 30px 50px;
+	/*background: yellow;*/
+	display: block;
+	text-align: center;
+	margin: 10px 40px;
+	color: #ffff;
+	text-decoration: none;
+	text-shadow: 3px 7px 0 #000;
+	border-radius: 10px;
+	background: linear-gradient(to top, #319b41, #0d5c25);
+	box-shadow: 0 8px 0 0 #20732f,
+	            0 0 25px 5px #ffff;
+}
+a.aprender-mas:hover{
+	box-shadow: 0 0 25px 5px #000;
+}
+.presentacion img{
+	float: right;
+	position: relative;
+	top: 30px;
+}
+/*Acceso-rapido*/
+.acceso-rapido{
+	background: #21bc4e;
+	overflow: hidden;
+	border-bottom: 3px solid #fff;
+}
+.acceso-rapido h2{
+	color: #fff;
+	font-size: 1.87em;
+	text-shadow: 1px 1px 0 #000;
+	text-align: center;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 16px;
+}
+.acceso-rapido figure{
+	display: inline-block;
+	text-align: center;
+	width: 24%;
+	margin: 0 -4px 0 0;
+	padding: 0px;
+}
+.acceso-rapido h3{
+	font-size: 1.1875em;
+	margin-top: 9px;
+	margin-bottom: 20px;
+}
+.acceso-rapido h3 a{
+	color: #fff;
+	text-shadow: 1px 1px 0 #000;
+	font-weight: normal;
+}
+.acceso-rapido h3 a:hover{
+	text-decoration: none;
+}
+/*------bloque contenido-------*/
+.bloque-contenido{
+	overflow: hidden;
+}
+.bloque-contenido .contenedor{
+	display: table;
+}
+.articulos{
+	background: beige;
+	width: 65%;
+	display: table-cell;
+	padding-right: 30px;
+}
+.articulos article{
+	margin-bottom: 10px;
+}
+.articulos h2{
+	color: #444444;
+	font-size: 1.625em;
+	border-bottom: 3px solid #0460ad;
+	padding-bottom: 25px;
+}
+.articulos img{
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	top: 5px;
+}
+.articulos article h1{
+	font-size: 1.25em;
+	margin: 8px 0 8px 0;
+}
+.articulos article h1 a{
+	color: #444444;
+	text-decoration: none;
+}
+.articulos article h1 a:hover{
+	text-decoration: underline;
+}
+.articulos article p{
+	margin: 0;
+	text-align: justify;
+	font-size: 0.875em;
+}
+.complementario{
+	background: #0460ad;
+	width: 35%;
+	display: table-cell;
+	padding: 0 20px 20 px;
+}
+.complementario h2{
+	font-size: 1.625em;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+}
+.complementario ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.complementario ul li{
+	
+	/*background: url(icon.PNG) no-repeat left center;*/
+	padding-left: 24px;
+	margin-bottom: 8px;
+}
+.complementario ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.complementario ul li a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.suscripcion form{
+	float: right;
+	position: relative;
+	top: 20px;
+}
+.suscripcion form input{
+	border: 1px solid #cccccc;
+	padding: 10px;
+}
+.suscripcion form input[type="submit"]{
+	border: 1px solid #22314d;
+	padding: 10px;
+	background: #0460ad;
+	color: #fff;
+	text-shadow: 1px 1px 0 #000;
+	box-shadow: 0 -1px 0px 0 #93badc insert;
+}
+.suscripcion form input[type="submit"]:hover{
+	background: #21bc4d;
+}
+.piedepagina{
+	background: #444444;
+	padding: 20px 0;
+}
+.piedepagina .contenedor{
+	display: table;
+}
+.piedepagina small{
+	display: table-cell;
+	background: red;
+	color: #fff;
+}
+.piedepagina nav{
+	display: table-cell;
+	background: blue;
+	text-align: right;
+}
+.piedepagina nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.piedepagina nav ul li{
+	display: inline-block;
+	padding-left: 10px;
+}
+.piedepagina nav ul li a:hover{
+	color: #ffff00;
+	text-decoration: underline;
+}
+.social{
+	position: fixed;
+	top: 30%;
+	right: 0;
+}
+.social a{
+	display: block;
+	margin-bottom: 4px;
+	opacity: 0.8;
+}
+.social a:hover{
+	opacity: 1;
+}
+.social img{
+	border-radius: 50%;
+	display: block;
+}
